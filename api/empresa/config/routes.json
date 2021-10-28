@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "GET",
+      "path": "/empresasEnabled",
+      "handler": "empresa.getCompaniesEnabled",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }

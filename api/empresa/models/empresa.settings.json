@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "empresas",
+  "collectionName": "companies",
   "info": {
     "name": "Empresa",
     "description": ""
@@ -18,7 +18,7 @@
       "maxLength": 100,
       "unique": true
     },
-    "Estado": {
+    "estado": {
       "type": "boolean",
       "default": false,
       "required": true

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import Logo from '../../../assets/images/holos_consulting.png';
+import Logo from '../../../assets/images/logo-strapi.png';
 
 const Wrapper = styled.div`
   background-color: ${(props) =>
@@ -18,15 +18,15 @@ const Wrapper = styled.div`
   .projectName {
     display: block;
     width: 100%;
-    height: 5.5rem;
+    height: ${props => props.theme.main.sizes.leftMenu.height};
     font-size: 2rem;
     letter-spacing: 0.2rem;
     color: $white;
 
     background-image: url(${Logo});
-    background-position: center;
-    background-size: contain;
-    padding: 0.5rem;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 2.5rem;
   }
 `;
 
