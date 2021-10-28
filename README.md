@@ -2,15 +2,15 @@
 
 A quick description of your strapi application
 
-##Start let's install
+## Start let's install
 npm install
 
-##Execute
+## Execute
 npm run develop
 
-##Build
+## Build
 npm run build 
 
-##Activate the source (admin folder visible)
+## Activate the source (admin folder visible)
 npm run develop -- --watch-admin
-####Important: The port is changed and now it runs at 8000. Port 1337 shows something but does not allow access to the strap.
+#### Important: The port is changed and now it runs at 8000. Port 1337 shows something but does not allow access to the strap.
