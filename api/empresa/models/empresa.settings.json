@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empresas",
+  "info": {
+    "name": "Empresa",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "unique": true
+    },
+    "Estado": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "admin_users": {
+      "plugin": "admin",
+      "collection": "user"
+    }
+  }
+}
