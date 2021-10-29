@@ -7,9 +7,10 @@ const { sanitizeEntity } = require("strapi-utils");
 
 module.exports = {
   async getCompaniesEnabled() {
-    //en el caso de que el metodo tenga un parametro
-    //   const { estado } = ctx.params;
-    const entity = await strapi.services.empresa.find({ estado: true });
-    return sanitizeEntity(entity, { model: strapi.models.empresa });
+    //en el caso de que el metodo tenga un parametro, acordarse que el metodo recibe dicho parametro.
+    //const { estado } = ctx.params;
+    return strapi
+      .query("empresa")
+      .model.aggregate([{ $match: { estado: true } }]);
   },
 };

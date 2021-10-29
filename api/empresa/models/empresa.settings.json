@@ -26,6 +26,10 @@
     "admin_users": {
       "plugin": "admin",
       "collection": "user"
+    },
+    "users_admin": {
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }
